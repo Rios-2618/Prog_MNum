@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdio.h>
 using namespace std;
-
+/*
 int main() {
 
     int i;
@@ -20,4 +20,19 @@ int main() {
         }
     }
 
+}
+*/
+int main () {
+
+    int cont=0,i=2;
+
+    while (i<100){
+
+        if ((i%7 != 0) && (i%10 != 0)){
+            cont=i*i+cont;
+            cout <<"i:"<< i << " , Conteo:" << cont <<endl;
+            i += 2;
+        }
+    }
+    cout<<"Total: "<< cont <<endl;
 }
