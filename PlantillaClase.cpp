@@ -3,6 +3,20 @@
 #include <stdio.h>
 using namespace std;
 
+/*
+Para guardar el archivo:
+    g++ NomArchivo.cpp -o NomEjecutable
+
+Para ejecutar el ejecutable, tienes que estar en la carpeta del ejecutable:
+    ./NomEjecutable
+
+Para ir a sub carpeta
+    cd NomSubcarpeta
+
+Para regresar carpeta madre
+    cd ..
+*/
+
 int eje1() {
     return 0;
 }
