@@ -51,6 +51,29 @@ int eje3() {
 }
 
 int eje4() {
+
+    int n;
+    double a;
+    double b;
+    int i;
+
+    printf("¿Cuantos numeros desea ingresar?\n");
+    scanf("%d", &n);
+
+    printf("\n\nIngrese el 1 valor:");
+    scanf("%lf", &a);
+
+    b=a;
+
+    for ( i=2 ; i<=n ; i++ ){
+        printf("\n\nIngrese el %d valor:\n", i);
+        scanf("%lf", &a);
+
+        if (a<b) b=a;
+    }
+
+    printf("\n\nEl valor minimo ingresado fue %lf \n\n", b);
+
     return 0;
 }
 
@@ -59,7 +82,7 @@ int eje5() {
 }
 
 int main() {
-    int eje=3;
+    int eje=2;
     switch (eje)
     {
     case 1:
