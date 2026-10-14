@@ -19,6 +19,9 @@ int eje1() {
     {
         c=b-((fc1(b)*(b-a))/(fc1(b)-fc1(a)));
 
+        printf("%lf \n",c);
+        printf("%lf \n",fc1(c));
+
         if(fc1(a)*fc1(c)<0){
             b=c;
         }
@@ -26,9 +29,9 @@ int eje1() {
             a=c;
         }
         
-    } while (abs(fc1(c))<eps);
+    } while (abs(fc1(c))>eps);
 
-    printf("%lf",c);
+    printf("\nLa raiz es: %lf\n",c);
 
     return 0;
 }
